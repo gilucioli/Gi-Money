@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     --text-body:#969cb3;
     --background:#f0f2f5;
     --shape:#ffffff;
+    --green:#33cc95;
+
 }
 *{
     margin: 0;
@@ -18,11 +20,11 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 html{
-    @media (max-width: 1080px){
-        font-size: 93.75%;
+    @media (max-width: 1080px){//16px
+        font-size: 93.75%;//15px
     }
     @media (max-width: 720px){
-        font-size: 87.5%;
+        font-size: 87.5%;//14px
     }
 }
 
@@ -31,7 +33,16 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
-nutton{
+body, input textarea, button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    font-weight: 600
+}    
+
+button{
     cursor: pointer;
 }
 
